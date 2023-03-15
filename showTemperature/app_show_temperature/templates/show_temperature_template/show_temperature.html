@@ -1,0 +1,23 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'home' %}"><input type="submit" value="Voltar" class="btn-back"></a>
+    <div class="container">
+            <div class="infos">
+                <ul>
+                <li>{{name}}</li>
+                <li>{{showTemp}}°</li>
+                <li>{{desc}}</li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
