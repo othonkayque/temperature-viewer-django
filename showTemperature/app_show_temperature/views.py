@@ -9,7 +9,7 @@ def show_temp(requests):
     API_KEY = "882cc068dbd560943536971f186616d6"
 
     CityName = requests.POST.get('inputName')
-    if CityName == "":
+    if CityName == "None":
         CityName = "Sao_paulo"
 
     api = http.request('GET', f'https://api.openweathermap.org/data/2.5/weather?q={CityName}&appid={API_KEY}&lang=pt_br')
