@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from .models import cityNameDB
 import urllib3, json
 http = urllib3.PoolManager()
 
